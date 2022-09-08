@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style2_travelCircle.css">
+  <link rel="stylesheet" type="text/css" href="style3_bounceCircle.css">
+  <link rel="stylesheet" type="text/css" href="style4_bounceCircle2.css">
+  <link rel="stylesheet" type="text/css" href="style5.css">
+  <link rel="stylesheet" type="text/css" href="style_screensaver.css">
+  <link rel="icon" id="icon" href="diamondIcon.png" type="image/png">
+  <meta charset="utf-8" />
+</head>
+
+<body onload="
+    document.querySelector('#circleA').style.opacity='1';
+    document.querySelector('#circleB').style.opacity='1';
+    document.querySelector('#circleC').style.opacity='1';
+    document.querySelector('#circleD').style.opacity='1';
+    document.querySelector('#circleE').style.opacity='1';
+    document.querySelector('#travelCanvasB').style.opacity='0.75'
+  ">
+
+  <section id="screensaver">
+    <span id="screensaverScreen">
+      <!-- <div class="travelBar"> -->
+        <div id="screensaverImgContainer">
+          <img id="screensaverImg" src="ScreenSaver\SS_Angular.png">
+        </div>
+      <!-- </div> -->
+    </span>
+  </section>
+
+  <section>
+    <div id="thing1Container">
+      <article id="thing1Article">hover over me</article>
+      <div id="thing1" class="thing"></div>
+    </div>
+    <br>
+    <div id="thing2" class="thing"></div>
+    <br>
+    <div id="thing3" class="thing"></div>
+    <br>
+    <div id="thing4" class="thing"></div>
+    <br>
+  </section>
+
+  <section>
+    <!-- <span id="bounceCanvas">
+    <div id="bounceCircle" class="circle"></div>
+  </span> -->
+  </section>
+
+  <!-- <section>
+    <article class="bounceBallContainer">
+      <span class="bounceCanvasA">
+        <div class="bounceCircle" id="circleA"></div>
+      </span>
+      <span class="bounceCanvasA">
+        <div class="bounceCircle" id="circleB"></div>
+      </span>
+      <span class="bounceCanvasA">
+        <div class="bounceCircle" id="circleC"></div>
+      </span>
+      <span class="bounceCanvasA">
+        <div class="bounceCircle" id="circleD"></div>
+      </span>
+      <span class="bounceCanvasA">
+        <div class="bounceCircle" id="circleE"></div>
+      </span>
+    </article>
+  </section> -->
+
+  <section>
+    <article class="bounceBallContainer">
+      <span class="bounceCanvasA">
+        <div class="bounceCircle" id="circleA"></div>
+      </span>
+      <span class="bounceCanvasA">
+        <div class="bounceCircle" id="circleB"></div>
+      </span>
+      <span class="bounceCanvasA">
+        <div class="bounceCircle" id="circleC"></div>
+      </span>
+      <span class="bounceCanvasA">
+        <div class="bounceCircle" id="circleD"></div>
+      </span>
+      <span class="bounceCanvasA">
+        <div class="bounceCircle" id="circleE"></div>
+      </span>
+      <span id="travelCanvasB" class="travelCanvas">
+        <div id="travelBarB" class="travelBar">
+          <div id="travelCircleB" class="travelCircle"></div>
+        </div>
+        <div id="travelBarC" class="travelBar">
+          <div id="travelCircleC" class="travelCircle"></div>
+        </div>
+        <div id="travelBarD" class="travelBar">
+          <div id="travelCircleD" class="travelCircle"></div>
+        </div>
+        <div id="travelBarE" class="travelBar">
+          <div id="travelCircleE" class="travelCircle"></div>
+        </div>
+      </span>
+    </article>
+  </section>
+
+  <!-- <section>
+    <span id="travelCanvasA" class="travelCanvas">
+      <div id="travelBarA" class="travelBar">
+        <div id="travelCircleA" class="travelCircle"></div>
+      </div>
+    </span>
+  </section> -->
+
+  <!-- <section>
+    <span class="animCircle">
+      <span class="animContainer">
+        <div class="animBlock animBlock1"></div>
+        <div class="animBlock animBlock2"></div>
+      </span>
+      <div class="animCenter"></div>
+    </span>
+  </section> -->
+
+  <script src="script_screensaver.js"></script>
+</body>
+
+</html>

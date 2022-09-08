@@ -1,0 +1,112 @@
+section {
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.thing {
+    width: 100px;
+    height: 100px;
+    border: 20px red solid;
+}
+
+/* thing1 */
+#thing1Container {
+    width: 100px;
+    height: 100px;
+    border: 20px red solid;
+    position: relative;
+}
+
+#thing1Article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#thing1Container:hover #thing1Article {
+    opacity: 0;
+}
+
+#thing1 {
+    border: none;
+    background-color: yellow;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#thing1Container:hover #thing1 {
+    opacity: 1;
+}
+
+/* thing2 */
+
+#thing2 {
+    background-color: cyan;
+}
+
+#thing2 {
+    animation: myKeyFrames01 4s;
+    /* cycles of the animation */
+    animation-iteration-count: 2;
+    transition: rotate 4s;
+}
+
+@keyframes myKeyFrames01 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* thing3 */
+
+#thing3 {
+    background-color: rgb(0, 255, 17);
+}
+
+#thing3 {
+    animation: myKeyFrames02 4s;
+    /* cycles of the animation */
+    animation-iteration-count: infinite;
+}
+
+@keyframes myKeyFrames02 {
+    from {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* thing4 */
+
+#thing4 {
+    background-color: rgb(225, 255, 77);
+}
+
+#thing4 {
+    animation: rotate 4s;
+    /* cycles of the animation */
+    animation-iteration-count: 2;
+}
+
+/* @keyframes myKeyFrames01 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} */

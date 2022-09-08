@@ -1,0 +1,117 @@
+#screensaver {
+    display: block;
+    aspect-ratio: 2 / 1;
+    min-width: 110px;
+    background-color: black;
+
+    border: rgb(83, 83, 83) solid 0.5em;
+    border-radius: 0.5em;
+}
+
+#screensaverScreen {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* #screensaver .travelBar {
+    width: 10%;
+
+    -webkit-animation-name: screensaver-travel;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 4.8s;
+
+    animation-name: screensaver-travel;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 4.8s;
+} */
+
+/* .imgContainer {
+    position: absolute;
+
+    background-image: radial-gradient(ellipse farthest-corner at 25% 25%, #ffffff,#000);
+
+    -webkit-animation-name: jump;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 4.2s;
+
+    animation-name: jump;
+    animation-iteration-count: infinite;
+    animation-duration: 4.2s;
+} */
+
+#screensaverImgContainer {
+    position: absolute;
+    width: 100px;
+    display: flex;
+
+    /* -webkit-animation-name: screensaver-jump;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 4.2s;
+
+    animation-name: screensaver-jump;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 4.2s; */
+}
+
+#screensaverImg {
+    width: 100%;
+    height: auto;
+    opacity: 80%;
+}
+
+
+@-webkit-keyframes screensaver-travel {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 90%;
+    }
+}
+
+@keyframes screensaver-travel {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 90%;
+    }
+}
+
+@-webkit-keyframes screensaver-jump {
+
+    from,
+    to {
+        bottom: 0%;
+        /* -webkit-animation-timing-function: ease-out; */
+    }
+
+    50% {
+        bottom: 82.7%;
+        /* -webkit-animation-timing-function: ease-in; */
+    }
+}
+
+@keyframes screensaver-jump {
+
+    from,
+    to {
+        bottom: 0%;
+        /* -webkit-animation-timing-function: ease-out; */
+    }
+
+    50% {
+        bottom: 82.7%;
+        /* -webkit-animation-timing-function: ease-in; */
+    }
+}
