@@ -43,39 +43,56 @@ body {
         #6a6a6a
     );}
 
-.poleContainer {
-    width: 80%;
-    aspect-ratio: 1 / 2.5;
-    margin: auto;
-}
-
-.pole {
-    height: 100%;
-    background: linear-gradient(
-        -45deg,
-        white 0%,
-        white 12.5%,
-        red 12.5%,
-        red 25%,
-        white 25%,
-        white 37.5%,
-        blue 37.5%,
-        blue 50%,
-        white 50%,
-        white 62.5%,
-        red 62.5%,
-        red 75%,
-        white 75%,
-        white 87.5%,
-        blue 87.5%,
-        blue 100%
-    );
-    background-size: 50% 20%;
-
-    -webkit-animation: barberpole 1.5s infinite linear;
-    animation: barberpole 1.5s infinite linear;
-}
-
+    .poleContainer {
+        position: relative;
+        width: 80%;
+        aspect-ratio: 1 / 2.5;
+        margin: auto;
+    }
+    
+    .pole, .poleShadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .poleShadow {
+        z-index: 1;
+        background-image: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.526) 5%,
+            transparent 15%, transparent 85%,
+            rgba(0, 0, 0, 0.526) 95%
+        );
+    }
+    
+    .pole {
+        z-index: 0;
+        background: linear-gradient(
+            -45deg,
+            white 0%,
+            white 12.5%,
+            red 12.5%,
+            red 25%,
+            white 25%,
+            white 37.5%,
+            blue 37.5%,
+            blue 50%,
+            white 50%,
+            white 62.5%,
+            red 62.5%,
+            red 75%,
+            white 75%,
+            white 87.5%,
+            blue 87.5%,
+            blue 100%
+        );
+        background-size: 50% 20%;
+    
+        -webkit-animation: barberpole 1.5s infinite linear;
+        animation: barberpole 1.5s infinite linear;
+    }
+    
 @-webkit-keyframes barberpole {
     from {
         background-position: 0%;
